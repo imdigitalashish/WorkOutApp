@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WorkoutTimerActivity">
+
+    <TextView
+        android:id="@+id/text_view_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Your Workout"
+        android:textSize="30sp"
+        android:fontFamily="@font/regular"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"/>
+
+    <Chronometer
+        android:id="@+id/stopWatch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/text_view_start"
+        android:layout_centerHorizontal="true" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/background_btn_worktime"
+        android:text="Start Timer"
+        android:textColor="#FFF"
+        android:fontFamily="@font/regular"
+        android:textSize="20sp"
+        android:id="@+id/btn_start"
+        android:onClick="startTimer"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stopWatch"
+        android:text="Your result will Appear Here"
+        android:id="@+id/stopResult"
+        />
+
+
+
+</RelativeLayout>
